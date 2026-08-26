@@ -39,6 +39,18 @@ app.get("/health", function (req, res) {
 
 });
 
+/* =========================
+   MINI APP TEST
+========================= */
+
+app.get("/api/test", function (req, res) {
+
+  res.json({
+    status: "success",
+    message: "NovaMine Mini App berhasil terhubung ke API"
+  });
+
+});
 
 /* =========================
    START SERVER
